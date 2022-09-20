@@ -29,7 +29,7 @@ export default function App() {
       setMensajePositivo(objetoNombre.mensajePositivo);
 
       setMensaje('');
-      setMensajePositivo('Se encontro usuario');
+      setMensajePositivo('Usuario Registrado');
 
     } else {
       setMensajePositivo('');
@@ -58,7 +58,7 @@ export default function App() {
                     if (tipoPrestamo != "") {
                       if (tipoPrestamo == 'vivienda' || tipoPrestamo == 'educacion' || tipoPrestamo == 'libre inversion') {
                         setMensaje('');
-                        setMensajePositivo('Simulando Crédito');
+                        setMensajePositivo('Crédito Simulado');
 
                         // let array = { nombre, montoPrestamo, numeroCuotas, tipoPrestamo, fecha, valorCuota, totalDeuda }
                         // setArreglo([...arreglo, array]);
@@ -87,7 +87,7 @@ export default function App() {
                         console.log(array)
                       }
                       else {
-                        setMensaje('Debe ingresar un tipo de prestamo valido:  (vivienda,educacion o libre inversion) ');
+                        setMensaje('Debe ingresar un tipo de prestamo valido: vivienda,educacion o libre inversion ');
                       }
                     }
                     else {
@@ -243,12 +243,12 @@ export default function App() {
 
       <View style={{ width: '90%', height: '45%', marginLeft: '10%', marginTop: 10, alignItems: 'center' }}>
 
-        <View style={{ width: '100%', backgroundColor: '#31B404', marginTop: 30, marginRight: 75, borderRadius: 5, marginLeft: 70, borderRadius: 6 }}>
-          <Text style={{ color: 'white', fontSize: 23, textAlign: 'center', padding: 1 }}>{mensajePositivo}</Text>
+        <View style={{ width: '100%', backgroundColor: '#31B404', marginTop: 30, marginRight: 75, borderRadius: 10, marginLeft: 70 }}>
+          <Text style={{ color: 'white', fontSize: 23, textAlign: 'center'}}>{mensajePositivo}</Text>
         </View>
 
-        <View style={{ width: '100%', backgroundColor: 'red', marginTop: 20, marginRight: 75, borderRadius: 5, marginLeft: 70, borderRadius: 6 }}>
-          <Text style={{ color: 'white', fontSize: 20, textAlign: 'center', padding: 1 }}>{mensaje}</Text>
+        <View style={{ width: '100%', backgroundColor: 'red', marginTop: 20, marginRight: 75, borderRadius: 10, marginLeft: 70 }}>
+          <Text style={{ color: 'white', fontSize: 20, textAlign: 'center'}}>{mensaje}</Text>
         </View>
 
       </View>
